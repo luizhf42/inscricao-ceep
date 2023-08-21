@@ -1,25 +1,81 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
 }
 
 form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.numero-inscricao {
+    width: 300px;
+}
+
+fieldset {
+    border: 0;
+    display: flex;
     width: 100%;
+    gap: 20px;
     flex-wrap: wrap;
-    gap: 10px;
+}
 
-    & div {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+.rg label {
+    width: 40%;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        & label {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
